@@ -4,21 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+</head> 
 <body>
+
+
+
+
+
+
+
+
+
     <Script>
         let birthMonth = prompt('what is your birth month?');
         let birthDate = prompt("what is your date of birth?");
 
+        let aries = new Object();
+        aries.name = "Aries";
+        aries.date = "March 21 - April 19";
+
+        let taurus = new Object();
+        taurus.name = "Taurus"
+        taurus.date = "April 20 - May 20"
+
+        let gemini = new Object();
+        gemini.name = "Gemini";
+        gemini.date = "May 21 - June 20";
+
+        let cancer = new Object();
+        cancer.name = "Cancer";
+        cancer.date = "June 21 - July 22";
+
+        let leo = new Object();
+        leo.name = "Leo";
+        leo.date = "July 23 - AUgust 22";
+
+        let virgo = new Object();
+        virgo.name = "Virgo";
+        virgo.date = "August 23 - September 22";
+
+        let libra = new Object();
+        libra.name = "Libra";
+        libra.date = "September 23 - October 22";
+
+        let scorpio = new Object();
+        scorpio.name = "Scorpio";
+        scorpio.date = "October 23 - November 21";
+
+        let sagittarius = new Object();
+        sagittarius.name = "Sagittarius";
+        sagittarius.date = "November 22 - December 21";
+
+        let capricorn = new Object();
+        capricorn.name = "Capricorn";
+        capricorn.date = "December 22 - January 19";
+
+        let aquarious = new Object();
+        aquarious.name = "Aquarius";
+        aquarious.date = "January 20 - February 18";
+
+        let pisces = new Object();
+        pisces.name = "Pisces";
+        pisces.date = "February 19 - March 20";
+
+
         if(birthMonth == "january"){
             if (birthDate >= 1 && birthDate <= 19){
-                alert("Capricorn");
+                alert(capricorn.date);
             } else if (birthDate >= 20 && birthDate <= 31){
                 alert("Aquarious");
             } else {
                 alert("INVALID DATE");
             }
-        } else if (birthMonth == "febuary"){
+        } else if (birthMonth == "february"){
             if (birthDate >= 1 && birthDate <= 18){
                 alert("Aquarious");
             } else if (birthDate >= 19 && birthDate <= 29){
