@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Zodiac Calculator</title>
 </head> 
-<body>
+<body><h1>Zodiac Sign Calculator</h1>
+<div class="mainContainer">
 
-<h1>Zodiac Sign Calculator</h1>
-
+<div class="form">
 <select name="Month" id="month">
-    <option value="default">----</option>
+    <option value="default">Month</option>
     <option value="january">January</option>
     <option value="february">February</option>
     <option value="march">March</option>
@@ -26,7 +28,7 @@
 </select>
 
 <select name="Day" id="day">
-    <option value="default">----</option>
+    <option value="default">Day</option>
     <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
@@ -62,12 +64,13 @@
 <button onclick="calculate()">
     submit
 </button>
-
+</div>
 <div id="container">
     <div id="error"></div>
     <div id="sign"> </div>
     <div id="date"> </div>
     <div id="element"> </div>
+</div>
 </div>
     
 <script src="script.js"></script>
